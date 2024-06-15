@@ -4,6 +4,7 @@ All you need is a browser and text editor to make your custom flashcards.
 To use:
 
 1. Clone this repository.
+git clone https://github.com/feenix100/flashcards.git
 
 2. Make a copy of the flashcards_Blank_Template folder, in case you want more than one set of flashcards.
 
