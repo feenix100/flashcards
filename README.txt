@@ -1,21 +1,111 @@
-This is a template for simple flashcards using javascript. No need to install extra packages. 
-All you need is a browser and text editor to make your custom flashcards.
+# Simple Flashcards Template in JavaScript
 
-To use:
+### Overview
 
-1. Clone this repository.
-git clone https://github.com/feenix100/flashcards.git
+This repository provides a template for creating simple flashcards using JavaScript. No additional packages are required—just a browser and a text editor.
 
-2. Make a copy of the flashcards_Blank_Template folder, in case you want more than one set of flashcards.
+### How to Use
 
-3. Edit the script.js file in the flashcards_Blank_Template folder.
+1. **Clone the Repository**: Clone the repository to your local machine using the following command:
 
-4. Copy and paste { question: "", answer: `` }, until you have the amount of questions you require. 
+    ```bash
+    git clone https://github.com/feenix100/flashcards.git
+    ```
 
-5. Add your questions and answers, (const flashcards = question: "your question here", answer: `your answer here.`)
- 
-6. Open index.html in a browser. Flashcards are ready to use!
+2. **Create Flashcard Sets**: Duplicate the `flashcards_Blank_Template` folder if you need multiple sets of flashcards.
 
-7. Edit styles.css to change the appearance of the flashcards.
+3. **Edit Flashcards**: Open and modify the `script.js` file within the `flashcards_Blank_Template` folder.
 
-8. Send me a blank check. (optional)
+4. **Add Questions**: Use the following format to add your questions and answers:
+
+    ```javascript
+    const flashcards = [
+        { question: "Your question here", answer: "Your answer here" },
+        // Add more flashcards as needed
+    ];
+    ```
+
+5. **Preview Flashcards**: Open `index.html` in a browser to view and interact with your flashcards.
+
+6. **Customize Appearance**: Modify `styles.css` to adjust the look and feel of your flashcards.
+
+7. **Optional Support**: Send a blank check if you feel so inclined (just kidding, but support is always appreciated!).
+
+### Example Files
+
+#### `script.js`
+
+```javascript
+// script.js
+const flashcards = [
+    { question: "What is the capital of France?", answer: "Paris" },
+    { question: "What is 2 + 2?", answer: "4" },
+    // Add more flashcards here
+];
+
+function displayFlashcards() {
+    // JavaScript code to display flashcards
+}
+```
+
+#### `index.html`
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="flashcard-container">
+        <h1>Flashcards</h1>
+        <div id="flashcard"></div>
+        <button id="next-button">Next</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Initialize flashcards
+        displayFlashcards();
+    </script>
+</body>
+</html>
+```
+
+#### `styles.css`
+
+```css
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#flashcard-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+```
+
+Enjoy creating and customizing your own flashcards!
